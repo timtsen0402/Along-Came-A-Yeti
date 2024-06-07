@@ -52,7 +52,7 @@ public class PlayerOnTrigger : MonoBehaviour
                 isCatched = true;
                 timeA = Time.time;
 
-                //¶Ç°e
+
                 transform.parent.gameObject.GetComponent<CharacterController>().enabled = false;
                 transform.parent.gameObject.transform.position = teleportationPoint.position;
                 transform.parent.gameObject.GetComponent<CharacterController>().enabled = true;
@@ -108,14 +108,14 @@ public class PlayerOnTrigger : MonoBehaviour
                 isCatched = true;
                 timeA = Time.time;
 
-                //ºâ¤À
+                //ï¿½ï¿½ï¿½
                 ScoreCalculator();
-                //¥´¶}µ²ºâ­±ªO
+                //ï¿½ï¿½ï¿½}ï¿½ï¿½ï¿½â­±ï¿½O
                 isOver = true;
                 scoreIMG.enabled = true;
                 ranking.enabled = true;
                 detail.enabled = true;
-                //Åã¥Üµ²ºâµ²ªG
+                //ï¿½ï¿½Üµï¿½ï¿½âµ²ï¿½G
                 string foxFound;
                 if (foxisFound)
                     foxFound = "Found";
