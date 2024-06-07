@@ -31,10 +31,10 @@ public class EnemyChasingAI : MonoBehaviour
         if (!isEnoughLog) sightRange = 200f;
         else sightRange = 500f;
 
-        //非追擊範圍
+
         if (!isMonsterInSightRange)
         {
-            //若曾發現過玩家將巡查
+
             if (hasFoundPlayer)
                 Patroling();
 
@@ -43,7 +43,7 @@ public class EnemyChasingAI : MonoBehaviour
 
         }
 
-        //追擊範圍
+
         else
         {
             hasFoundPlayer = true;
@@ -58,7 +58,7 @@ public class EnemyChasingAI : MonoBehaviour
             {
                 KillPlayer();
             }
-            if(!isOver)
+            if (!isOver)
                 FindObjectOfType<AudioManager>().Enable("chasing", true);
             else
                 FindObjectOfType<AudioManager>().Enable("chasing", false);
